@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Qual é a sua nacionalidade?</title>
+</head>
+<body>
+  <h1>Qual é a sua nacionalidade?</h1>
+  Nacionalidade <input type="text" name="txtnac" id="txtnac"> 
+  <input type="button" value="Verifique" onclick="nacionalidade()">
+
+  <div id="res">
+
+  </div>
+
+  <script>
+    function nacionalidade(){
+
+      var país = 'Brasil'
+      console.log(`Vivendo em ${país}`)
+      if (país == 'Brasil') {
+        console.log('Brasileiro!')
+      } else {
+        console.log('Estrangeiro')
+      }
+
+    }
+  
+  
+  </script>
+
+  
+</body>
+</html>

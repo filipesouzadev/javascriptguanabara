@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Primeiros Passos com DOM</title>
+  <style>
+      body{
+        background:rgb(99, 10, 182);
+        font:normal 18pt Calibri;
+        color: white;
+      }
+  </style>
+</head>
+<body>
+  <h1>Iniciando estudos com DOM</h1>
+  <p>Aqui vai o resultado</p>
+  <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+  <div id="msg">Clique em mim</div>
+
+  <script>
+    
+    var p1 = window.document.getElementsByTagName('p')[1] //dentro do parentes colocamos a tag que queremos buscar, colchete é a posição da tag caso haja mais de uma do mesmo tipo 
+    var corpo = window.document.body
+  
+    //p1.style.color = 'blue' //muda o estilo do meu primeiro parágrafo
+
+    /*var d = window.document.getElementById('msg') //selecionando a div pelo ID
+    d.style.background = 'green'
+    d.innerText = 'Estou aguardando...'
+    */
+
+    var d = window.document.querySelector('div#msg')
+    d.style.background = 'black'
+
+
+  </script>
+  
+</body>
+</html>
